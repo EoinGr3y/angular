@@ -1,0 +1,41 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const point_1 = require("./point");
+const like_component_1 = require("./like-component");
+let count;
+let b;
+let c;
+let d;
+let e = [1, 2, 3];
+let f = [1, true, 'a'];
+let arrowLog = (message) => {
+    console.log(message);
+};
+var Color;
+(function (Color) {
+    Color[Color["Red"] = 0] = "Red";
+    Color[Color["Green"] = 1] = "Green";
+    Color[Color["Blue"] = 2] = "Blue";
+})(Color || (Color = {}));
+let backgroundColor = Color.Blue;
+let log = function (message) {
+    console.log(message);
+};
+let point = new point_1.Point(1, 2);
+point._x = 3;
+let optionalParametersPoint = new point_1.Point();
+point.draw();
+let likesComponent = new like_component_1.LikeComponent(5);
+console.log('Number of likes = ' + likesComponent._numberOfLikes);
+console.log('Is Selected = ' + likesComponent._isSelected);
+likesComponent.toggleLike();
+console.log('Number of likes = ' + likesComponent._numberOfLikes);
+console.log('Is Selected = ' + likesComponent._isSelected);
+arametersPoint = new point_1.Point();
+point.draw();
+let likesComponent = new like_component_1.LikeComponent(5);
+console.log('Number of likes = ' + likesComponent._numberOfLikes);
+console.log('Is Selected = ' + likesComponent._isSelected);
+likesComponent.toggleLike();
+console.log('Number of likes = ' + likesComponent._numberOfLikes);
+console.log('Is Selected = ' + likesComponent._isSelected);
