@@ -1,0 +1,10 @@
+<div>
+  <p>
+  {{ course.title | uppercase }} <br/>
+  {{ course.students | number}} <br/>
+  {{ course.rating | number:'1.2-2' }} <br/>
+  {{ course.price | currency:'EUR' }} <br/>
+  {{ course.releaseDate | date:'shortDate' }}
+  </p>
+  <p>{{ text | summary:15 }}</p>
+</div>
